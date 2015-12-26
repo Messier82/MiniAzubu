@@ -1,0 +1,126 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22.12.2015, 9:37:22
+    Author     : messi_000
+*/
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+}
+
+//MD icons sizes
+.material-icons.tiny {
+    font-size: 1rem;
+}
+.material-icons.small {
+    font-size: 2rem;
+}
+.material-icons.medium {
+    font-size: 3rem;
+}
+.material-icons.large {
+    font-size: 4rem;
+}
+
+/* Define popup size */
+body {
+    min-width: 300px;
+    min-height: 500px;
+    width: 300px;
+    height: 500px;
+}
+
+.button-collapse {
+    margin-left: 10px;
+}
+
+.navButton {
+    line-height: 36px !important;
+    font-size: 1.1em !important;
+    height: 36px !important;
+}
+
+.brand-logo {
+    left: 29% !important;
+}
+
+.channel {
+    margin: 8px 0;
+    padding: 0 !important;
+    position: relative;
+}
+
+.channel .bottombar {
+    position: absolute;
+    color: white;
+    bottom: 0;
+    padding: 0 4px;
+    background: rgba(0,0,0,0.8); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(transparent, rgba(0,0,0,0.8)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(transparent, rgba(0,0,0,0.8)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(transparent, rgba(0,0,0,0.8)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(transparent, rgba(0,0,0,0.8)); /* Standard syntax */
+    width: 100%;
+    padding-top: 2em;
+}
+
+.channel .bottombar .gamename {
+    font-size: 0.8em;
+    color: rgba(255,255,255,0.8);
+    transition: all .3s;
+}
+
+.channel .bottombar .gamename:hover {
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+}
+
+.channel .thumbnail {
+    min-width: 0;
+}
+
+.channel .thumbnail img {
+    max-width: 100%;
+    height: auto;
+}
+
+.channel .topbar {
+    position: absolute;
+    color: white;
+    width: 100%;
+    top: 0;
+    padding: 0 4px;
+    height: 6em;
+    padding-bottom: 1em;
+    background: rgba(0,0,0,0.8); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgba(0,0,0,0.8), transparent); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(0,0,0,0.8), transparent); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(0,0,0,0.8), transparent); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(0,0,0,0.8), transparent); /* Standard syntax */
+}
+
+.channel .topbar i {
+    font-size: 1.5rem;
+    padding-top: 2px;
+    float: left;
+}
+
+.channel .topbar .count {
+    margin-top: 0.16em;
+    margin-left: 3px;
+    float: left;
+}
+
+.grayscale {
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+}
+
+.progress {
+    bottom: 4px;
+}

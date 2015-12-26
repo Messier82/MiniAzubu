@@ -1,0 +1,59 @@
+<!DOCTYLE html>
+<html ng-app="MiniAzubu" ng-controller="MainController">
+    <head>
+        <title>Mini Azubu</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <!--Styles-->
+        <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <link type="text/css" rel="stylesheet" href="style.css"/>
+
+        <!--JS Scripts-->
+        <!--jQuery-->
+        <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+        <!--Angular and it's libraries-->
+        <script type="text/javascript" src="js/angular.min.js"></script>
+        <script type="text/javascript" src="js/angular-route.min.js"></script>
+        <!--Materialize-->
+        <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+        <!--My library-->
+        <script type="text/javascript" src="js/main.js"></script>
+
+        <!--Angular dependencies-->
+        <!--Controllers-->
+        <script src="js/controllers/MainController.js"></script>
+        <script src="js/controllers/FollowingController.js"></script>
+    </head>
+
+    <body class="grey lighten-2">
+        <div class="navbar-fixed">
+            <nav class="blue">
+                <div class="side-nav fixed" id="sideNav">
+                    <div style="text-align:center;height:56px;line-height: 56px;border-bottom: 1px solid #ddd; color: black;">
+                        <img src="images/icon48.png" style="width: 32px;margin-bottom: -8px; margin-right: 5px;" alt="Mini Azubu logo" />
+                        <span style="font-size: 1.5em;">Mini Azubu</span>
+                    </div>
+
+                    <a href="#following" class="navButton waves-effect waves-default btn-flat">Following</a>
+                    <a href="#settings" class="navButton waves-effect waves-default btn-flat">Settings</a>
+                </div>
+                <header>
+                    <div class="nav-wrapper">
+                        <a data-activates="sideNav" class="button-collapse" style="cursor: pointer;"><i class="small material-icons">menu</i></a>
+                        <span class="brand-logo" style="padding-left:5px;font-size: 20px;">{{ Page.Title}}</span>
+                        <div class="progress" id="mainProgress" style="display: none;">
+                            <div class="indeterminate"></div>
+                        </div>
+                    </div>
+                </header>
+            </nav>
+        </div>
+        <main>
+            <ng-view></ng-view>
+        </main>
+
+    </body>
+</html>
