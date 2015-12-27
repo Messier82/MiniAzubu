@@ -1,8 +1,25 @@
-<div class="row">
-    <h6 class="blue-text" style="padding-left: 5px;">Account</h6>
-    <div class="col s12 card">
-        <div class="card-content">
-            dasd
+<div class="row settings" style="margin: 0 10px;">
+    <h6 class="blue-text" style="padding-left: 5px; padding-top: 5px;">Account</h6>
+    <div class="col s12 card" style="margin-top: 0;">
+        <div class="card-content" style="padding: 10px;">
+            <div class="col s12">
+                Current Azubu.tv username:<br />
+                <b>{{ Page.Username}}</b> <br />
+                <a ng-click="Page.logout()" class="btn btn-default blue white-text waves-effect waves-light pointer">Logout</a>
+            </div>
+        </div>
+    </div>
+
+    <h6 class="blue-text" style="padding-left: 5px; padding-top: 5px;">Following</h6>
+    <div class="col s12 card following" style="margin-top: 0;">
+        <div class="card-content" style="padding: 10px;">
+            <div class="col s12 switch">
+                <label class="black-text" style="font-size: 0.9em;">
+                    Show stream titles
+                    <input id="showStreamTitles" type="checkbox" class="right" {{ Page.Settings.followings.showStreamTitles == true ? 'checked' }}>
+                    <span class="lever right" style="margin-right: 0px; margin-top: 2px;"></span>
+                </label>
+            </div>
         </div>
     </div>
 </div>

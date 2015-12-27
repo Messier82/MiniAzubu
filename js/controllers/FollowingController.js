@@ -5,7 +5,8 @@ mainModule.controller("FollowingController", function ($scope, $http, Page) {
     };
     Page.setTitle("Following");
     Page.showPreloader();
-    $http.get("http://api.azubu.tv/public/modules/user/"+ Page.Username.username +"/followings/list").then(function (response) {
+    console.log("http://api.azubu.tv/public/modules/user/"+ Page.Username +"/followings/list");
+    $http.get("http://api.azubu.tv/public/modules/user/"+ Page.Username +"/followings/list").then(function (response) {
         var channels = response.data.data;
         console.log(channels);
         channels.forEach(function (channel) {

@@ -10,8 +10,26 @@ $(document).ready(function () {
         chrome.storage.sync.set({"username": $("#username").val()});
         location.href = "./main.html";
     });
-    $(".side-nav a").click(function(){
+    $(".side-nav a").click(function () {
         $(".button-collapse").sideNav("hide");
+    });
+    $(".settings .following #showStreamTitles+span").click(function () {
+        console.log($(this).is(":checked"));
+        if ($(this).is(":checked")) {
+            chrome.storage.sync.set({"settings": {
+                    following: {
+                        showStreamTitles: true
+                    }
+                }
+            });
+        } else {
+            chrome.storage.sync.set({"settings": {
+                    following: {
+                        showStreamTitles: false
+                    }
+                }
+            });
+        }
     });
 });
 

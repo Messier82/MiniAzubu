@@ -3,11 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/OpenServer/domains/MiniAzubu/views/following.html</file>
-            <file>file:/C:/OpenServer/domains/MiniAzubu/js/controllers/MainController.js</file>
-            <file>file:/C:/OpenServer/domains/MiniAzubu/main.html</file>
-            <file>file:/C:/OpenServer/domains/MiniAzubu/style.css</file>
-            <file>file:/C:/OpenServer/domains/MiniAzubu/js/controllers/FollowingController.js</file>
+            <file>file:/F:/OpenServer/domains/MiniAzubu/js/controllers/MainController.js</file>
+            <file>file:/F:/OpenServer/domains/MiniAzubu/js/controllers/FollowingController.js</file>
+            <file>file:/F:/OpenServer/domains/MiniAzubu/style.css</file>
+            <file>file:/F:/OpenServer/domains/MiniAzubu/login.html</file>
+            <file>file:/F:/OpenServer/domains/MiniAzubu/js/main.js</file>
+            <file>file:/F:/OpenServer/domains/MiniAzubu/views/following.html</file>
+            <file>file:/F:/OpenServer/domains/MiniAzubu/views/settings.html</file>
         </group>
     </open-files>
 </project-private>

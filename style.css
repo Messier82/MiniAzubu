@@ -124,3 +124,11 @@ body {
 .progress {
     bottom: 4px;
 }
+
+.card-content {
+    overflow: hidden;
+}
+
+.pointer {
+    cursor: pointer;
+}

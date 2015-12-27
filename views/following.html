@@ -27,7 +27,11 @@
         <h5 style="margin-bottom: 0;">Offline</h5>
         <div class="col s12 z-depth-1 white channel waves-effect waves-light" ng-repeat="Channel in Channels.offline" ng-click="open(Channel.user.username)">
             <div class="thumbnail" ng-class="Channel.is_live == false ? 'grayscale' : ''"><img ng-src="{{ Channel.url_thumbnail}}" /></div>
-            <div class="username">{{ Channel.user.username}}</div>
+            <div class="bottombar">
+                <div class="username">
+                    {{ Channel.user.username}}
+                </div>
+            </div>
             <div class="topbar">
                 <div class="tooltip" data-position="top" data-tooltip="Views">
                     <i class="material-icons grey-text">remove_red_eye</i>
