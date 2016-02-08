@@ -80,6 +80,11 @@ body {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
 }
 
+.channel .bottombar .streamname {
+    white-space: nowrap;
+    float: left;
+}
+
 .channel .thumbnail {
     min-width: 0;
 }
@@ -131,4 +136,12 @@ body {
 
 .pointer {
     cursor: pointer;
+}
+
+.switch label input[type=checkbox]:checked+.lever {
+    background-color: #81d4fa !important;
+}
+
+.switch label input[type=checkbox]:checked+.lever:after {
+    background-color: #29b6f6 !important;
 }

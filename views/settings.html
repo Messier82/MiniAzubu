@@ -10,13 +10,13 @@
         </div>
     </div>
 
-    <h6 class="blue-text" style="padding-left: 5px; padding-top: 5px;">Following</h6>
-    <div class="col s12 card following" style="margin-top: 0;">
+    <h6 class="blue-text" style="padding-left: 5px; padding-top: 5px;">Followings</h6>
+    <div class="card">
         <div class="card-content" style="padding: 10px;">
             <div class="col s12 switch">
                 <label class="black-text" style="font-size: 0.9em;">
                     Show stream titles
-                    <input id="showStreamTitles" type="checkbox" class="right" {{ Page.Settings.followings.showStreamTitles == true ? 'checked' }}>
+                    <input type="checkbox" class="right" ng-model="settings.followings.showStreamTitles">
                     <span class="lever right" style="margin-right: 0px; margin-top: 2px;"></span>
                 </label>
             </div>

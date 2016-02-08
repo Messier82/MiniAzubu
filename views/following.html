@@ -7,6 +7,9 @@
                 <div class="gamename">
                     {{ Channel.category.title}}
                 </div>
+                <div class="streamname" ng-if="settings.followings.showStreamTitles" data-position="top" data-tooltip="{{Channel.title}}">
+                    {{ Channel.title}}
+                </div>
                 <div class="username">
                     {{ Channel.user.username}}
                 </div>

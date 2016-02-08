@@ -13,24 +13,6 @@ $(document).ready(function () {
     $(".side-nav a").click(function () {
         $(".button-collapse").sideNav("hide");
     });
-    $(".settings .following #showStreamTitles+span").click(function () {
-        console.log($(this).is(":checked"));
-        if ($(this).is(":checked")) {
-            chrome.storage.sync.set({"settings": {
-                    following: {
-                        showStreamTitles: true
-                    }
-                }
-            });
-        } else {
-            chrome.storage.sync.set({"settings": {
-                    following: {
-                        showStreamTitles: false
-                    }
-                }
-            });
-        }
-    });
 });
 
 var mainModule = angular.module('MiniAzubu', ["ngRoute"]);
@@ -45,7 +27,8 @@ mainModule.config(function ($routeProvider, $locationProvider) {
                 controller: "FollowingController"
             })
             .when("/settings", {
-                templateUrl: "./views/settings.html"
+                templateUrl: "./views/settings.html",
+                controller: "SettingsController"
             });
 //    $locationProvider.html5Mode(true);
 });

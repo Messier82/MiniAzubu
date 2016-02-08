@@ -5,7 +5,8 @@ mainModule.controller("FollowingController", function ($scope, $http, Page) {
     };
     Page.setTitle("Following");
     Page.showPreloader();
-    console.log("http://api.azubu.tv/public/modules/user/"+ Page.Username +"/followings/list");
+    $scope.settings = Page.Settings;
+//    console.log("http://api.azubu.tv/public/modules/user/"+ Page.Username +"/followings/list");
     $http.get("http://api.azubu.tv/public/modules/user/"+ Page.Username +"/followings/list").then(function (response) {
         var channels = response.data.data;
         console.log(channels);
@@ -16,7 +17,7 @@ mainModule.controller("FollowingController", function ($scope, $http, Page) {
                 $scope.Channels.offline.push(channel);
             }
             Page.hidePreloader();
-            $('.tooltip').tooltip({delay: 50});
+            trimNames();
         });
     });
     $scope.open = function (username) {
