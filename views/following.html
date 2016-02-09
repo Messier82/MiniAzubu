@@ -1,7 +1,7 @@
 <div class="row" style="margin: 0 10px;">
     <div ng-if="Channels.online.length != 0" style="margin-bottom: 20px;">
         <h5 style="margin-bottom: 0;">Online</h5>
-        <div class="col s12 z-depth-1 white channel waves-effect waves-light" ng-repeat="Channel in Channels.online">
+        <div class="col s12 z-depth-1 white channel waves-effect waves-light" ng-repeat="Channel in Channels.online" ng-click="open(Channel.user.username)">
             <div class="thumbnail" ng-class="Channel.is_live == false ? 'grayscale' : ''"><img ng-src="{{ Channel.url_thumbnail}}" /></div>
             <div class="bottombar">
                 <div class="gamename">
